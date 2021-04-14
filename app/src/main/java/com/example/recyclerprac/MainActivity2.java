@@ -41,13 +41,13 @@ public class MainActivity2 extends AppCompatActivity {
             /*Request req = new Request.Builder()
                     .url("https://weatherapi-com.p.rapidapi.com/current.json?q=Mumbai")
                     .get()
-                    .addHeader("x-rapidapi-key", "a047a4ca4fmshe5d8ee7cd211087p188235jsne9127bcc380b")
+                    .addHeader("x-rapidapi-key", "<YOUR RAPID-API KEY HERE>")
                     .addHeader("x-rapidapi-host", "weatherapi-com.p.rapidapi.com")
                     .build();*/
             Request req1 = new Request.Builder()
                     .url(URLMaker(city))
                     .get()
-                    .addHeader("key", "bd2d594fc7c041a0a34191254201812")
+                    .addHeader("key", "<YOUR RAPID-API KEY HERE>")
                     .build();
             try {
                 Response response = client.newCall(req1).execute();
